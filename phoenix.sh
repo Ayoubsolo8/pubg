@@ -18,7 +18,8 @@ else
 	echo -e "\e[0;34m 文件init.sh备份完成.. \e[0m"
 fi
 echo -e "\e[0;34m 远程下载过检测文件..\e[0m"
-cd /tmp && rm -rf build.prop init.sh
+#cd /tmp && rm -rf build.prop init.sh
+cd /sdcard/Download && rm -rf build.prop init.sh
 wget -q -O build.prop  https://raw.githubusercontent.com/Beavan/pubg/master/phoenix_os/file/build.prop
 wget -q -O init.sh https://raw.githubusercontent.com/Beavan/pubg/master/phoenix_os/file/init.sh
 echo -e "\e[0;34m 文件下载完成.. \e[0m"
